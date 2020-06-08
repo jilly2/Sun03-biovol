@@ -3,7 +3,9 @@ Jill Schwarz 20200608: Interactive measurement of phytoplankton dimensions and c
 Sun, J., D. Liu, 2003. Geometric models for calculating cell biovolume and surface area for phytoplankton. J. Plankton Res. 25(11), 1331-1346.
 
 This code was written for, and only tested on, MacOS 10.12.6.
+
 Code files:  biovolSun03.m, processPhotos_example.m
+
 Input data files: ChagosMicroscopy_counts_example.xlsx, photos in directory XXV_2_20200408. 
 
 The core function, biovolSun03.m, allows you to take measurements interactively from a figure window in which a photograph of the cell is shown.
