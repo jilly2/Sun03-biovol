@@ -9,6 +9,9 @@ Code files:  biovolSun03.m, processPhotos_example.m
 Input data files: ChagosMicroscopy_counts_example.xlsx, photos in directory XXV_2_20200408.
 
 Output data file: processPhotos_example.m writes a dynamically-named .mat file.
+Output images: Annotated versions of your input photos are stored in new folders x100 and x400 - this needs to be adapted to your own system in processPhotos.m. 
+
+Example output images: item_2_Pseudonitzschia_A_1.png, item_45_cf_Gomphonema_1.png.
 
 Description:
 
