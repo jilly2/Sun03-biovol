@@ -6,7 +6,11 @@ This code was written for, and only tested on, MacOS 10.12.6.
 
 Code files:  biovolSun03.m, processPhotos_example.m
 
-Input data files: ChagosMicroscopy_counts_example.xlsx, photos in directory XXV_2_20200408. 
+Input data files: ChagosMicroscopy_counts_example.xlsx, photos in directory XXV_2_20200408.
+
+Output data file: processPhotos_example.m writes a dynamically-named .mat file.
+
+Description:
 
 The core function, biovolSun03.m, allows you to take measurements interactively from a figure window in which a photograph of the cell is shown.
 
@@ -16,7 +20,7 @@ No check is made within biovolSun03.m for multiple figure windows - the active f
 
 The code that calls biovolSun03.m for my dataset is processPhotos_example.m. This code uses an Excel spreadsheet in which microscopy data were recorded to pull up successive phytoplankton (and protozoa/other interesting features) one by one, to be measured using biovolSun03.m.  This is very specific to my way of storing the data from these samples.
 
-File ChagosMicroscopy_counts_example.xlsx illustrates the microscopy log and is one input to the processPhotos_example.m.  When I run this code, I make a note of the shape used to calculate biovolume for each cell in a separate copy of the input Excel file. Cell sizing information are stored in .mat files, in the variable struct st. I merge this information with my cell count data separately.
+File ChagosMicroscopy_counts_example.xlsx illustrates the microscopy log and is one input to the processPhotos_example.m.  When I run this code, I make a note of the shape used to calculate biovolume for each cell in a separate copy of the input Excel file. Cell sizing information is stored in .mat files, in the variable struct st. I merge this information with my cell count data separately.
 
 Directory XXV_2_20200408 contains the first 20 photos as an example of the second input to processPhotos.m. 
 
